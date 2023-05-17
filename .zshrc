@@ -162,3 +162,9 @@ eval "$(zoxide init zsh)"
 #fzf
 source "$ZDOTDIR/fzf/key-bindings.zsh"
 source "$ZDOTDIR/fzf/completion.zsh"
+
+#######################################
+# Cursor Blinking
+#######################################
+
+echo -en "\e[2 q"
