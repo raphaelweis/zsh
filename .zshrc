@@ -1,15 +1,4 @@
 #######################################
-# Powerlevel10k instant prompt
-#######################################
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-#######################################
 # Plugins
 #######################################
 
@@ -94,20 +83,6 @@ alias .4='../../../..'
 alias .5='../../../../..'
 
 #######################################
-# Environment variables
-#######################################
-
-export EDITOR="nvim"
-export TERMINAL="alacritty"
-export BROWSER="firefox"
-
-export PDFVIEWER="/usr/bin/firefox"
-export VIMRC="$XDG_CONFIG_HOME/nvim/init.lua"
-export VIMCONFDIR="$XDG_CONFIG_HOME/nvim"
-export WALLPAPERS_DIR="$HOME/Pictures/wallpapers"
-export SCREENSHOTS_DIR="$HOME/Pictures/screenshots"
-
-#######################################
 # Functions
 #######################################
 
@@ -137,17 +112,6 @@ ex () {
   fi
 }
 
-######################################
-# Old
-######################################
-
-# # zsh theme: powerlevel10k
-# if [ ! -d $ZSH_PLUGINS_DIR/powerlevel10k ]; then
-#   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_PLUGINS_DIR/powerlevel10k
-# fi
-# source $ZSH_PLUGINS_DIR/powerlevel10k/powerlevel10k.zsh-theme
-# source $ZDOTDIR/.p10k.zsh
-
 #######################################
 # Else
 #######################################
@@ -162,9 +126,3 @@ eval "$(zoxide init zsh)"
 #fzf
 source "$ZDOTDIR/fzf/key-bindings.zsh"
 source "$ZDOTDIR/fzf/completion.zsh"
-
-#######################################
-# Cursor Blinking
-#######################################
-
-echo -en "\e[2 q"
