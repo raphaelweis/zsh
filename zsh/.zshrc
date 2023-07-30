@@ -49,7 +49,6 @@ unsetopt beep # disable beep when errors occur
 
 # vi mode
 bindkey -v vi
-bindkey 'jk' vi-cmd-mode
 bindkey "^?" backward-delete-char # to make backspace work
 
 # Keybinds: zsh-history-substring-search
@@ -69,12 +68,7 @@ alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias gitc='git checkout'
 alias gits='git status'
 
-# use lsd as a replacement for la
-alias ls='lsd'
-alias la='lsd -la'
-
-# use zoxide as a replacement for cd.
-alias cd='z'
+alias la='ls -la'
 
 # directory up aliases
 alias .2='../..'
@@ -119,9 +113,6 @@ ex () {
 #nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # To work with nvm, see documentation at https://github.com/nvm-sh/nvm
-
-#zoxide
-eval "$(zoxide init zsh)"
 
 #fzf
 source "$ZDOTDIR/fzf/key-bindings.zsh"
