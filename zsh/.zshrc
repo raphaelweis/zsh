@@ -49,6 +49,7 @@ unsetopt beep # disable beep when errors occur
 
 # vi mode
 bindkey -v vi
+bindkey 'jk' vi-cmd-mode
 bindkey "^?" backward-delete-char # to make backspace work
 
 # Keybinds: zsh-history-substring-search
