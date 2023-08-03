@@ -69,6 +69,7 @@ alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias gitc='git checkout'
 alias gits='git status'
 
+alias ls='lsd' # use lsd as a replacement for ls
 alias la='ls -la'
 
 # directory up aliases
