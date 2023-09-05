@@ -60,6 +60,7 @@ bindkey '^[[B' history-substring-search-down
 # Aliases 
 #######################################
 
+alias vim='nvim'
 alias bonjour='cowsay bonjour' # absolutely capital
 alias bt='bluetuith' # bluetooth tui
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash && zsh'
@@ -68,8 +69,8 @@ alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias gitc='git checkout'
 alias gits='git status'
 
+alias ls='lsd'
 alias la='ls -la'
-alias lsda='lsd -la' 
 
 # directory up aliases
 alias .2='../..'
