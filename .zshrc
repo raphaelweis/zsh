@@ -69,6 +69,7 @@ alias gitc='git checkout'
 alias gits='git status'
 
 alias la='ls -la'
+alias lsda='lsd -la' 
 
 # directory up aliases
 alias .2='../..'
