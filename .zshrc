@@ -6,6 +6,7 @@
 ZSH_PLUGINS_DIR="$ZDOTDIR/plugins"
 
 # starship prompt
+export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 eval "$(starship init zsh)"
 
 # zsh syntax highlighting
