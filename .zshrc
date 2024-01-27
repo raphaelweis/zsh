@@ -103,3 +103,6 @@ export FZF_ALT_C_COMMAND="fd --type d --hidden"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+
+# enable vi mode
+bindkey -v
